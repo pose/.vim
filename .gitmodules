@@ -7,9 +7,6 @@
 [submodule "bundle/lusty"]
 	path = bundle/lusty
 	url = git://github.com/sjbach/lusty.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
 [submodule "bundle/yank-ring"]
 	path = bundle/yank-ring
 	url = git://github.com/vim-scripts/YankRing.vim.git
@@ -25,3 +22,12 @@
 [submodule "bundle/birds_of_paradise/colors"]
 	path = bundle/birds_of_paradise/colors
 	url = git://github.com/kennethlove/Birds-of-Paradise-VIM-Theme.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/pose/snipmate.vim.git
+[submodule "bundle/snipmate-snippets/snippets"]
+	path = bundle/snipmate-snippets/snippets
+	url = git://github.com/scrooloose/snipmate-snippets.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
