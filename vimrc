@@ -10,6 +10,8 @@ call pathogen#runtime_append_all_bundles()
 " change the mapleader from \ to ,
 let mapleader=","
 
+set expandtab
+
 
 set nowrap        " don't wrap lines
 set tabstop=4     " a tab is four spaces
@@ -41,6 +43,8 @@ set noswapfile
 
 filetype plugin indent on
 autocmd filetype python set expandtab
+autocmd filetype javascript set expandtab shiftwidth=4 tabstop=4
+autocmd filetype html set expandtab shiftwidth=3 tabstop=3
 
 set pastetoggle=<F5>
 set mouse=a
