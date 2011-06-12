@@ -13,7 +13,6 @@ let mapleader=","
 set expandtab
 
 
-set nowrap        " don't wrap lines
 set tabstop=4     " a tab is four spaces
 set backspace=indent,eol,start
                   " allow backspacing over everything in insert mode

@@ -24,7 +24,7 @@
 	url = git://github.com/kennethlove/Birds-of-Paradise-VIM-Theme.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = git://github.com/pose/snipmate.vim.git
+    url = git://github.com/garbas/vim-snipmate.git
 [submodule "bundle/snipmate-snippets/snippets"]
 	path = bundle/snipmate-snippets/snippets
 	url = git://github.com/scrooloose/snipmate-snippets.git
