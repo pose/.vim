@@ -22,12 +22,6 @@
 [submodule "bundle/birds_of_paradise/colors"]
 	path = bundle/birds_of_paradise/colors
 	url = git://github.com/kennethlove/Birds-of-Paradise-VIM-Theme.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-    url = git://github.com/garbas/vim-snipmate.git
-[submodule "bundle/snipmate-snippets/snippets"]
-	path = bundle/snipmate-snippets/snippets
-	url = git://github.com/scrooloose/snipmate-snippets.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
