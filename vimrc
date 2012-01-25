@@ -44,6 +44,8 @@ filetype plugin indent on
 autocmd filetype python set expandtab
 autocmd filetype javascript set expandtab shiftwidth=4 tabstop=4
 autocmd filetype html set expandtab shiftwidth=3 tabstop=3
+" Adds C+_ key binding to close an open xml tag
+autocmd filetype html,xml,xsl source ~/.vim/bundle/closetag/scripts/closetag.vim
 
 set pastetoggle=<F5>
 set mouse=a
@@ -70,4 +72,5 @@ nmap <silent> ,/ :nohlsearch<CR>
 set hidden
 
 
-colorscheme birds_of_paradise
+colorscheme birds
+let g:LustyJugglerSuppressRubyWarning = 1

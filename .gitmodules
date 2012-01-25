@@ -37,3 +37,6 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
+[submodule "colors"]
+	path = colors
+	url = git://github.com/kennethlove/Birds-of-Paradise-VIM-Theme.git
