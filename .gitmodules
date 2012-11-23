@@ -40,3 +40,9 @@
 [submodule "colors"]
 	path = colors
 	url = git://github.com/kennethlove/Birds-of-Paradise-VIM-Theme.git
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/handlebars"]
+	path = bundle/handlebars
+	url = git://github.com/nono/vim-handlebars.git
