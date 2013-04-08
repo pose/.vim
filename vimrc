@@ -46,6 +46,7 @@ autocmd filetype javascript set expandtab shiftwidth=4 tabstop=4
 autocmd filetype java set expandtab shiftwidth=4 tabstop=4
 autocmd filetype html set expandtab shiftwidth=2 tabstop=2
 autocmd filetype coffee set expandtab shiftwidth=2 tabstop=2
+autocmd filetype less set expandtab shiftwidth=2 tabstop=2
 " Adds C-_ key binding to close an open xml tag
 autocmd filetype html,xml,xsl source ~/.vim/bundle/closetag/scripts/closetag.vim
 
@@ -73,6 +74,7 @@ map <F2><right> :vsplit<CR>
 map <F3> :TagbarToggle<CR> 
 map <F5> :set invfu<CR>
 map <F6> :w<CR>:make<CR>
+map <F7> :! gitx<CR>
 
 " Meta+1-0 jumps to tab 1-10, Shift+Meta+1-0 jumps to tab 11-20:
 let s:windowmapnr = 0
@@ -144,8 +146,23 @@ autocmd QuickFixCmdPost *grep* cwindow
 " set efm=%*[^']'%f'%m.\ (%t%*[^)])\ at\ line\ %l\\,\ column\ %c 
 
 " Call ChrimePing whenever a .js/hbs/less file was saved
-autocmd BufWritePost *.js,*.hbs,*.less silent call ChromePing()
+"autocmd BufWritePost *.js,*.hbs,*.less,*.coffee,*.html,*.handlebars,*.css,*.json silent call ChromePing()
 
 " When saving a .vim or the .vimrc file automagicially source it
 autocmd BufWritePost *.vim,.vimrc silent source <sfile>
 
+" Folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+
+" Solarized
+syntax enable
+set background=dark
+colorscheme solarized
+
+"" Custom
+execute 'chdir '.$HABITAT_PATH.'/web-ui/app'
+set wildignore+=*.gif,*.otf,*.ttf,*.svg,*.eot,*.woff,*.png,public/**,node_modules/**,target/**
+"execute 'chdir '.$SWAGGER_UI_PATH.'/src/'

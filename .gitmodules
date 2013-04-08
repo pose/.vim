@@ -7,9 +7,6 @@
 [submodule "bundle/lusty"]
 	path = bundle/lusty
 	url = git://github.com/sjbach/lusty.git
-[submodule "bundle/yank-ring"]
-	path = bundle/yank-ring
-	url = git://github.com/vim-scripts/YankRing.vim.git
 [submodule "bundle/mac_classic"]
 	path = bundle/mac_classic
 	url = git://github.com/nelstrom/vim-mac-classic-theme.git
@@ -37,9 +34,6 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
-[submodule "colors"]
-	path = colors
-	url = git://github.com/kennethlove/Birds-of-Paradise-VIM-Theme.git
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
@@ -52,9 +46,12 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
-[submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/chromedev"]
+	path = bundle/chromedev
+	url = git@github.com:pose/vim-chromedev.git
