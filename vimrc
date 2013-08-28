@@ -162,7 +162,8 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-"" Custom
-execute 'chdir '.$HABITAT_PATH.'/web-ui/app'
-set wildignore+=*.gif,*.otf,*.ttf,*.svg,*.eot,*.woff,*.png,public/**,node_modules/**,target/**
-"execute 'chdir '.$SWAGGER_UI_PATH.'/src/'
+set exrc
+
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
