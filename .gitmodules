@@ -16,9 +16,6 @@
 [submodule "bundle/neverland/colors"]
 	path = bundle/neverland/colors
 	url = git://github.com/trapd00r/neverland-vim-theme.git
-[submodule "bundle/birds_of_paradise/colors"]
-	path = bundle/birds_of_paradise/colors
-	url = git://github.com/kennethlove/Birds-of-Paradise-VIM-Theme.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
@@ -55,3 +52,6 @@
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/editorconfig"]
+	path = bundle/editorconfig
+	url = git@github.com:editorconfig/editorconfig-vim.git

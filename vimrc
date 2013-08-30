@@ -40,7 +40,7 @@ set noerrorbells         " don't beep
 set nobackup
 set noswapfile
 
-filetype plugin indent on
+filetype plugin on
 autocmd filetype python set expandtab shiftwidth=4 tabstop=4
 autocmd filetype javascript set expandtab shiftwidth=4 tabstop=4
 autocmd filetype java set expandtab shiftwidth=4 tabstop=4
@@ -137,7 +137,6 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 set hidden
 
-colorscheme zenburn
 let g:LustyJugglerSuppressRubyWarning = 1
 autocmd QuickFixCmdPost *grep* cwindow
 
