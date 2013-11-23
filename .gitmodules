@@ -55,3 +55,6 @@
 [submodule "bundle/editorconfig"]
 	path = bundle/editorconfig
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "bundle/vim-project"]
+	path = bundle/vim-project
+	url = https://github.com/amiorin/vim-project.git
