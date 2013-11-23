@@ -47,8 +47,6 @@ autocmd filetype java set expandtab shiftwidth=4 tabstop=4
 autocmd filetype html set expandtab shiftwidth=2 tabstop=2
 autocmd filetype coffee set expandtab shiftwidth=2 tabstop=2
 autocmd filetype less set expandtab shiftwidth=2 tabstop=2
-" Adds C-_ key binding to close an open xml tag
-autocmd filetype html,xml,xsl source ~/.vim/bundle/closetag/scripts/closetag.vim
 
 set mouse=a
 
