@@ -48,12 +48,12 @@ let g:indent_guides_guide_size=1
 " ------------------------------------------
 
 filetype plugin on
-autocmd filetype python     set expandtab shiftwidth=4 tabstop=4
-autocmd filetype javascript set expandtab shiftwidth=4 tabstop=4
-autocmd filetype java       set expandtab shiftwidth=4 tabstop=4
-autocmd filetype html       set expandtab shiftwidth=2 tabstop=2
-autocmd filetype coffee     set expandtab shiftwidth=2 tabstop=2
-autocmd filetype less       set expandtab shiftwidth=2 tabstop=2
+autocmd filetype python             set expandtab shiftwidth=4 tabstop=4
+autocmd filetype javascript         set expandtab shiftwidth=4 tabstop=4
+autocmd filetype java               set expandtab shiftwidth=4 tabstop=4
+autocmd filetype html               set expandtab shiftwidth=2 tabstop=2
+autocmd filetype coffee             set expandtab shiftwidth=2 tabstop=2
+autocmd filetype less               set expandtab shiftwidth=2 tabstop=2
 
 " ------
 " Search
@@ -77,9 +77,14 @@ set undolevels=1000                 " use many muchos levels of undo
 set title                           " change the terminal's title
 set visualbell                      " don't beep
 set noerrorbells                    " don't beep
+set exrc                            " If .vimrc file found in project directory should override the default
 
 set nobackup
 set noswapfile
+
+set hidden
+
+syntax enable
 
 set mouse=a
 
@@ -92,19 +97,15 @@ nnoremap <Up> gk
 :set autowriteall
 :set autoread
 
-set hidden
-
 autocmd QuickFixCmdPost *grep* cwindow
 
 " When saving a .vim or the .vimrc file automagicially source it
 autocmd BufWritePost *.vim,.vimrc silent source <sfile>
 
 " Solarized
-syntax enable
 set background=dark
 colorscheme solarized
 
-set exrc
 
 " --------
 " Mac OS X
@@ -155,34 +156,34 @@ function! ToggleList(bufname, pfx)
   endif
 endfunction
 
-nmap <silent> <leader>l                   :call ToggleList("Location List", 'l')<CR>
-nmap <silent> <D-S-up>                    <C-W><up>
-nmap <silent> <D-S-down>                  <C-W><down>
-nmap <silent> <D-S-left>                  <C-W><left>
-nmap <silent> <D-S-right>                 <C-W><right>
-nmap <silent> <D-F1>                      :call ChromeDebug()<CR>
+nmap <silent> <leader>l             :call ToggleList("Location List", 'l')<CR>
+nmap <silent> <D-S-up>              <C-W><up>
+nmap <silent> <D-S-down>            <C-W><down>
+nmap <silent> <D-S-left>            <C-W><left>
+nmap <silent> <D-S-right>           <C-W><right>
+nmap <silent> <D-F1>                :call ChromeDebug()<CR>
 
 " -------------------------------------
 " Function keys mapping (F1, F2, F3...)
 " -------------------------------------
-nmap <silent> <F1>                <leader>t
-nmap <silent> <F2><up>            :split<CR>
-nmap <silent> <F2><down>          :split<CR>
-nmap <silent> <F2><left>          :vsplit<CR>
-nmap <silent> <F2><right>         :vsplit<CR>
-nmap <silent> <F3>                :TagbarToggle<CR>
-nmap <silent> <F4>                :call ToggleList("Quickfix List", 'c')<CR>
-nmap <silent> <F5>                :set invfu<CR>
-nmap <silent> <F6>                :w<CR>:make<CR>
-nmap <silent> <F7>                :! gitx<CR>
+nmap <silent> <F1>                  <leader>t
+nmap <silent> <F2><up>              :split<CR>
+nmap <silent> <F2><down>            :split<CR>
+nmap <silent> <F2><left>            :vsplit<CR>
+nmap <silent> <F2><right>           :vsplit<CR>
+nmap <silent> <F3>                  :TagbarToggle<CR>
+nmap <silent> <F4>                  :call ToggleList("Quickfix List", 'c')<CR>
+nmap <silent> <F5>                  :set invfu<CR>
+nmap <silent> <F6>                  :w<CR>:make<CR>
+nmap <silent> <F7>                  :! gitx<CR>
 
 
 " ------------------
 " vim-project plugin
 " ------------------
 set rtp+=~/.vim/bundle/vim-project/
+let g:project_enable_welcome = 0
 call project#rc()
 
-let g:project_enable_welcome = 0
 
 
