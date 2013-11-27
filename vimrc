@@ -2,6 +2,12 @@ autocmd!
 
 set nocompatible                    " This must be first, because it changes other options as side effect
 
+" --------
+" pathogen
+" --------
+call pathogen#helptags()
+call pathogen#incubate()
+
 " --------------
 " Leader options
 " --------------
@@ -170,11 +176,6 @@ nmap <silent> <F5>                  :set invfu<CR>
 nmap <silent> <F6>                  :w<CR>:make<CR>
 nmap <silent> <F7>                  :! gitx<CR>
 
-" --------
-" pathogen
-" --------
-call pathogen#helptags()
-call pathogen#incubate()
 
 " ------------------
 " vim-project plugin
