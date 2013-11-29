@@ -68,7 +68,7 @@ set incsearch                       " show search matches as you type
 " ----
 
 " Ignore files located in project paths
-set wildignore=*.swp,*.bak,*.pyc,*.class,node_modules,dist,bower_components
+set wildignore=*.swp,*.bak,*.pyc,*.class,node_modules,dist,bower_components,coverage
 
 set list
 set history=1000                    " remember more commands and search history
@@ -160,7 +160,6 @@ nmap <silent> <D-S-up>              <C-W><up>
 nmap <silent> <D-S-down>            <C-W><down>
 nmap <silent> <D-S-left>            <C-W><left>
 nmap <silent> <D-S-right>           <C-W><right>
-nmap <silent> <D-F1>                :call ChromeDebug()<CR>
 
 " -------------------------------------
 " Function keys mapping (F1, F2, F3...)
@@ -176,13 +175,20 @@ nmap <silent> <F5>                  :set invfu<CR>
 nmap <silent> <F6>                  :w<CR>:make<CR>
 nmap <silent> <F7>                  :! gitx<CR>
 
+" -------------
+" CtrlP Mapping
+" -------------
+let g:ctrlp_map = '<leader>t'
 
 " ------------------
 " vim-project plugin
 " ------------------
 set rtp+=~/.vim/bundle/vim-project/
 let g:project_enable_welcome = 0
+let g:project_disable_tab_title = 1
 call project#rc()
 
 
+Project '~/Documents/javascript-editor'
+Project '~/Documents/suggest'
 
