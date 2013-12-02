@@ -67,6 +67,8 @@ set incsearch                       " show search matches as you type
 " Misc
 " ----
 
+set guifont=Inconsolata:h15
+
 " Ignore files located in project paths
 set wildignore=*.swp,*.bak,*.pyc,*.class,node_modules,dist,bower_components,coverage
 
