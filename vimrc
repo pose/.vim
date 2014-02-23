@@ -57,7 +57,7 @@ let g:indent_guides_guide_size=1
 
 filetype plugin on
 autocmd filetype python             set expandtab shiftwidth=4 tabstop=4
-autocmd filetype javascript         set expandtab shiftwidth=4 tabstop=4
+autocmd filetype javascript         set expandtab shiftwidth=2 tabstop=2
 autocmd filetype java               set expandtab shiftwidth=4 tabstop=4
 autocmd filetype html               set expandtab shiftwidth=2 tabstop=2
 autocmd filetype coffee             set expandtab shiftwidth=2 tabstop=2
