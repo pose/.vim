@@ -63,6 +63,8 @@ autocmd filetype html               set expandtab shiftwidth=2 tabstop=2
 autocmd filetype coffee             set expandtab shiftwidth=2 tabstop=2
 autocmd filetype less               set expandtab shiftwidth=2 tabstop=2
 
+au BufNewFile,BufRead *.ejs setlocal syntax=html
+
 " ------
 " Search
 " ------
