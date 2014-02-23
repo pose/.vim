@@ -36,6 +36,15 @@ set smarttab                        " insert tabs on the start of a line accordi
 set shiftwidth=4                    " number of spaces to use for autoindenting
 set shiftround                      " use multiple of shiftwidth when indenting with '<' and '>'
 
+" Always show at least one line above/below the cursor
+if !&scrolloff
+  set scrolloff=1
+endif
+if !&sidescrolloff
+  set sidescrolloff=5
+endif
+set display+=lastline
+
 " Indent guides plugin
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
