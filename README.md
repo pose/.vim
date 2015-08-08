@@ -2,7 +2,7 @@
 
 ## Install
 ```sh
-git clone git@github.com:pose/.vim.git && .vim/install.sh
+git clone https://github.com/pose/.vim.git && .vim/install.sh
 ```
 
 ## Sources
