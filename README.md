@@ -1,9 +1,12 @@
 # My .vim files
-## Introduction
-This is my personal configuration for using vim.
+
+## Install
+```sh
+git clone git@github.com:pose/.vim.git && .vim/install.sh
+```
 
 ## Sources
-I based it on the following blogposts: 
+I insipired on the following blogposts:
  * http://nvie.com/posts/how-i-boosted-my-vim/
  * http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 

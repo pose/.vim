@@ -2,3 +2,4 @@
 mvim
 bundle
 .netrwhist
+.DS_Store
