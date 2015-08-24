@@ -117,14 +117,20 @@ filetype plugin on
 filetype indent on
 
 autocmd filetype python             set expandtab shiftwidth=4 tabstop=4
-autocmd filetype javascript         set expandtab shiftwidth=2 tabstop=2
 autocmd filetype java               set expandtab shiftwidth=4 tabstop=4
 autocmd filetype html               set expandtab shiftwidth=2 tabstop=2
 autocmd filetype coffee             set expandtab shiftwidth=2 tabstop=2
 autocmd filetype less               set expandtab shiftwidth=2 tabstop=2
 
+" js settings
+" ------------
+autocmd filetype javascript         set expandtab shiftwidth=2 tabstop=2
 au BufNewFile,BufRead *.ejs setlocal syntax=html
 au BufNewFile,BufRead .jshintrc setlocal syntax=javascript
+
+" Fallback to eslint when .eslintrc is present
+autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : ['standard']
+
 
 " Search
 " ------
