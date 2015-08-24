@@ -68,6 +68,9 @@ Plugin 'scrooloose/syntastic'
 " ctrlp
 Plugin 'ctrlpvim/ctrlp.vim'
 
+" Cool status line (100% viml)
+Plugin 'bling/vim-airline'
+
 " All of your Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
@@ -181,6 +184,9 @@ set cursorcolumn
 
 " set number for easier jump
 set number
+
+" show status bar
+set laststatus=2
 
 " Mac OS X
 " --------
