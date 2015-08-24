@@ -132,6 +132,13 @@ au BufNewFile,BufRead .jshintrc setlocal syntax=javascript
 autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : ['standard']
 
 
+" .md settings
+" -------------
+autocmd filetype markdown           set expandtab shiftwidth=2 tabstop=2
+" set textwidth and reformat when reaching 79 columns
+autocmd filetype markdown           set tw=79 formatoptions+=t
+
+
 " Search
 " ------
 set showmatch                       " set show matching parenthesis
