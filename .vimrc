@@ -35,9 +35,6 @@ Plugin 'groenewege/vim-less'
 " add vim-indent-guides (displaying indent levels in Vim)
 Plugin 'nathanaelkane/vim-indent-guides'
 
-" add jshint (required?)
-Plugin 'Shutnik/jshint2.vim'
-
 " add applescript support
 Plugin 'vim-scripts/applescript.vim'
 
