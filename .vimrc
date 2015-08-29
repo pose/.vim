@@ -153,7 +153,10 @@ set incsearch                       " show search matches as you type
 " Misc
 " ----
 
-" "set guifont=Inconsolata:h13
+" Use system clipboard by default
+set clipboard=unnamed
+
+" set guifont=Inconsolata:h13
 set guifont=Consolas:h11
 
 " Ignore files located in project paths
