@@ -71,6 +71,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " Cool status line (100% viml)
 Plugin 'bling/vim-airline'
 
+" Dim inactive windows
+Plugin 'blueyed/vim-diminactive'
+
 " All of your Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
