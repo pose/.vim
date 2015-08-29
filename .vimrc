@@ -132,7 +132,7 @@ au BufNewFile,BufRead *.ejs setlocal syntax=html
 au BufNewFile,BufRead .jshintrc setlocal syntax=javascript
 
 " Fallback to eslint when .eslintrc is present
-autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : ['standard']
+autocmd FileType javascript let b:syntastic_checkers = findfile('.eslintrc', '.;') != '' ? ['eslint'] : ['jshint']
 
 
 " .md settings
