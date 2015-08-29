@@ -220,6 +220,8 @@ nmap <silent> <F2><down>            :split<CR><C-W><C-W>
 nmap <silent> <F2><left>            :vsplit<CR><C-W><C-W>
 nmap <silent> <F2><right>           :vsplit<CR><C-W><C-W>
 
+set pastetoggle=<F5>
+
 " CtrlP Mapping
 " -------------
 let g:ctrlp_map = '<leader>t'
