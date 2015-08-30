@@ -225,6 +225,11 @@ map <D-w> :bdelete
 
 " F1, F2, F3...
 " -------------
+" show next jshint error
+nnoremap <silent><F1> :lnext<CR>
+inoremap <silent><F1> <C-O>:lnext<CR>
+vnoremap <silent><F1> :lnext<CR>
+
 nmap <silent> <F2><up>              :split<CR><C-W><C-W>
 nmap <silent> <F2><down>            :split<CR><C-W><C-W>
 nmap <silent> <F2><left>            :vsplit<CR><C-W><C-W>
