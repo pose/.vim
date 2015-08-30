@@ -214,6 +214,9 @@ set cursorcolumn
 " set number for easier jump
 set number
 
+" set relative line numbers
+set relativenumber
+
 " show status bar
 set laststatus=2
 
