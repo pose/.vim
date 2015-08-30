@@ -199,6 +199,9 @@ autocmd QuickFixCmdPost *grep* cwindow
 " When saving a .vim or the .vimrc file automagicially source it
 autocmd BufWritePost *.vim,.vimrc silent source <sfile>
 
+set shell=/bin/zsh
+set term=xterm-256color
+
 "set listchars=nbsp:¬,eol:¶,tab:>-,extends:»,precedes:«,trail:•
 set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:•
 set list
