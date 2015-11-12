@@ -89,3 +89,4 @@ then
 fi
 
 # TODO Add: https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+# TODO Add: global .gitignore: git config --global core.excludesfile '~/.gitignore'
