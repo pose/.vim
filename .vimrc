@@ -163,8 +163,8 @@ set incsearch                       " show search matches as you type
 " Use system clipboard by default
 set clipboard=unnamed
 
-" set guifont=Inconsolata:h13
-set guifont=Consolas:h11
+" set guifont=Consolas:h11
+set guifont=Hack:h11
 
 " Ignore files located in project paths
 set wildignore=*.swp,*.bak,*.pyc,*.class,node_modules,dist,bower_components,coverage
